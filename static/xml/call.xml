@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Record maxLength="15" timeout="2" playBeep="false" trim-silence="do-not-trim" action="http://www.voxo.io/record" method="POST" />
+</Response>

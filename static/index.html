@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Voxo</title>
+		<link href="css/main.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="about-text">
+			Voxo | PennApps Winter 2015 | &copy; Ruiqi Mao 2015
+		</div>
+		<div class="init-screen">
+			<div class="init-logo"><img src="images/logo.png" /></div>
+			<div class="init-description">Pressing Unmute on Life</div>
+			<div class="init-retry">
+				Unfortunately, somebody else is using Voxo right now. Come back and try again later!
+			</div>
+			<div class="init-call">
+				<input class="init-number" type="text" placeholder="Phone Number" />
+				<button class="init-button">CALL</button>
+			</div>
+		</div>
+		<div class="call-screen">
+			<div class="call-header">
+				<div class="call-logo">
+					<img src="images/logo.png" />
+				</div>
+				<div class="call-number">+1 (916) 934-8285</div>
+			</div>
+			<div class="call-chat">
+				<div class="call-chatlogs">	
+				</div>
+				<div class="call-chatbox">
+					<input type="text" class="call-chatinput" placeholder="Type a message..." />
+					<div class="call-chatbutton">SEND</div>
+				</div>
+			</div>
+			<div class="call-dialer">
+				<div class="call-pad">
+					<div class="call-button" id="1"><div>1</div></div>
+					<div class="call-button" id="2"><div>2</div></div>
+					<div class="call-button" id="3"><div>3</div></div>
+					<div class="call-button" id="4"><div>4</div></div>
+					<div class="call-button" id="5"><div>5</div></div>
+					<div class="call-button" id="6"><div>6</div></div>
+					<div class="call-button" id="7"><div>7</div></div>
+					<div class="call-button" id="8"><div>8</div></div>
+					<div class="call-button" id="9"><div>9</div></div>
+					<div class="call-button" id="star"><div>*</div></div>
+					<div class="call-button" id="0"><div>0</div></div>
+					<div class="call-button" id="pound"><div>#</div></div>
+				</div>
+				<div class="call-endbutton">END CALL</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="http://www.voxo.io/socket.io/socket.io.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

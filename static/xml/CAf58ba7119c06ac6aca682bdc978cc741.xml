@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" ?><Response>	<Play digits="1"></Play>	<Redirect method="POST">http://www.voxo.io/xml/call.xml</Redirect></Response>

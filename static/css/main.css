@@ -1,0 +1,304 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+* {
+	margin:0;
+	padding:0;
+	outline:none;
+}
+
+html,body {
+	font-size:1rem;
+	font-family:Roboto;
+}
+
+.init-screen {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translateX(-50%) translateY(-50%);
+	-ms-transform:translateX(-50%) translateY(-50%);
+	padding:1rem;
+	width:100%;
+	max-width:300px;
+	box-sizing:border-box;
+}
+
+.init-logo img {
+	width:100%;
+	max-width:150px;
+	display:block;
+	margin:auto;
+}
+
+.init-description {
+	width:100%;
+	padding:1rem;
+	text-align:center;
+	box-sizing:border-box;
+	padding-bottom:0;
+	font-size:0.9rem;
+	color:#666666;
+	font-weight:400;
+}
+
+.init-retry {
+	padding-top:1rem;
+	text-align:center;
+	font-size:0.9rem;
+	color:#666666;
+	line-height:1.3rem;
+}
+
+.init-retry,.init-call {
+	display:none;
+}
+
+.init-number {
+	margin-top:1rem;
+	margin-bottom:1rem;
+	padding:0.8rem;
+	font-size:1rem;
+	font-family:Roboto;
+	font-weight:300;
+	width:100%;
+	box-sizing:border-box;
+	text-align:center;
+	border:1px solid #DDDDDD;
+	border-radius:0.3rem;
+}
+
+.init-button {
+	padding:0.9rem;
+	font-size:0.9rem;
+	font-family:Roboto;
+	font-weight:600;
+	width:100%;
+	box-sizing:border-box;
+	text-align:center;
+	cursor:pointer;
+	border:none;
+	border-radius:0.3rem;
+	background:#F27D21;
+	outline:none;
+	color:#FFFFFF;
+}
+
+.init-button:hover {
+	background:#DC721F;
+}
+
+.init-button:disabled {
+	cursor:default;
+	background:#F19954;
+}
+
+.call-screen {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:none;
+}
+
+.call-header {
+	height:3rem;
+	border-bottom:3px solid #F27D21;
+	padding:0.4rem;
+	box-sizing:border-box;
+}
+
+.call-logo {
+	height:1.4rem;
+	padding:0.3rem;
+	float:left;
+}
+
+.call-logo img {
+	height:100%;
+}
+
+.call-number {
+	float:right;
+	font-size:1rem;
+	color:#888888;
+	height:2.2rem;
+	line-height:2.2rem;
+	padding-right:0.3rem;
+	font-family:Roboto;
+	font-weight:300;
+}
+
+.call-chat {
+	position:absolute;
+	left:0;
+	top:3rem;
+	bottom:0;
+	width:70%;
+	background:#FFFFFF;
+}
+
+.call-chatlogs {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:3rem;
+	padding:1rem;
+	overflow-y:auto;
+}
+
+.call-chatlog {
+	clear:both;
+	padding:0.3rem;
+	padding-left:0.8rem;
+	padding-right:0.8rem;
+	margin-bottom:0.5rem;
+	border-radius:1.2rem;
+	font-size:0.9rem;
+	font-weight:300;
+}
+
+.call-chatlog.self {
+	float:right;
+	background:#20DB31;
+	color:#FFFFFF;
+}
+
+.call-chatlog.other {
+	float:left;
+	background:#EAEAEA;
+}
+
+.call-chatbox {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:3rem;
+	border-top:1px solid #DDDDDD;
+	background:#FAFAFA;
+	padding:0.5rem;
+	box-sizing:border-box;
+}
+
+.call-chatinput {
+	height:2rem;
+	box-sizing:border-box;
+	line-height:2rem;
+	font-size:0.9rem;
+	padding:0.4rem;
+	padding-right:6.5rem;
+	font-family:Roboto;
+	font-weight:300;
+	border:1px solid #DDDDDD;
+	border-radius:0.2rem;
+	width:100%;
+}
+
+.call-chatbutton {
+	width:6rem;
+	height:2rem;
+	position:absolute;
+	top:0.5rem;
+	right:0.5rem;
+	background:#F27D21;
+	text-align:center;
+	color:#FFFFFF;
+	line-height:2rem;
+	border:1px solid transparent;
+	border-top-right-radius:0.2rem;
+	border-bottom-right-radius:0.2rem;
+	box-sizing:border-box;
+	font-size:0.9rem;
+	font-weight:600;
+	cursor:pointer;
+}
+
+.call-chatbutton:hover {
+	background:#DC721F;
+}
+
+.call-dialer {
+	position:absolute;
+	right:0;
+	top:3rem;
+	bottom:0;
+	width:30%;
+	background:#FAFAFA;
+	border-left:1px solid #DDDDDD;
+}
+
+.call-pad {
+	position:absolute;
+	top:2rem;
+	left:2rem;
+	right:2rem;
+	bottom:5.5rem;
+	outline:1px solid #F2B483;
+	box-sizing:border-box;
+}
+
+.call-button {
+	width:33.3%;
+	height:25%;
+	background:#FFFFFF;
+	cursor:pointer;
+	float:left;
+	position:relative;
+}
+
+.call-button div {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translateX(-50%) translateY(-50%);
+	-ms-transform:translateX(-50%) translateY(-50%);
+	transform:translateX(-50%) translateY(-50%);
+	font-family:Roboto;
+	font-size:1rem;
+	font-weight:500;
+	color:#666666;
+}
+
+.call-button:hover {
+	background:#FAFAFA;
+}
+
+.call-button:active {
+	background:#F8F8F8;
+}
+
+.call-endbutton {
+	position:absolute;
+	left:1rem;
+	right:1rem;
+	bottom:1rem;
+	height:2.5rem;
+	line-height:2.5rem;
+	text-align:center;
+	border:none;
+	background:#D83813;
+	color:#FFFFFF;
+	font-family:Roboto;
+	font-weight:600;
+	font-size:0.9rem;
+	border-radius:0.3rem;
+	cursor:pointer;
+}
+
+.call-endbutton:hover {
+	background:#C72702;
+}
+
+.about-text {
+	position:absolute;
+	left:0;
+	bottom:0;
+	right:0;
+	text-align:center;
+	padding:0.6rem;
+	font-size:0.9rem;
+	font-family:Roboto;
+	color:#888888;
+}
